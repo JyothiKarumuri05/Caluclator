@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cal.css" />
+</head>
+<body>
+    
+    <div  class="Caluclator">
+        <h1>My Caluclator</h1>
+        <form>
+        <input  style="width: 393px; height:70px; text-align:right; font-size:45px;" type="text" id="txtDisplay" readonly />
+        <div class="keys">
+            <button type="button" onclick="numberPress('7')">7</button>
+            <button type="button" onclick="numberPress('8')">8</button>
+            <button type="button" onclick="numberPress('9')">9</button>
+            <button type="button" onclick="numberPress('+')">+</button>
+            <button type="button" onclick="numberPress('4')">4</button>
+            <button type="button" onclick="numberPress('5')">5</button>
+            <button type="button" onclick="numberPress('6')">6</button>
+            <button type="button" onclick="numberPress('-')">-</button>
+            <button type="button" onclick="numberPress('3')">3</button>
+            <button type="button" onclick="numberPress('2')">2</button>
+            <button type="button" onclick="numberPress('1')">1</button>
+            <button type="button" onclick="numberPress('*')">*</button>
+            <button type="button" onclick="numberPress('%')">%</button>
+            <button type="button" onclick="numberPress('0')">0</button>
+            <button type="button" onclick="caluclate('=')">=</button>
+            <button type="button" onclick="numberPress('/')">/</button>
+            <button type="button" onclick="numberPress('.')">.</button>
+            <button type="reset">C</button>
+            <button type="button" onclick="backspace()">BS</button>
+            <button type="button" onclick="save('')">M</button>
+            <button type="button" onclick="save('+')">M+</button>
+            <button type="button" onclick="save('-')">M-</button>
+            <button type="button" onclick="restore()">MR</button>
+            <button type="button" onclick="clearMemory()">MC</button>
+
+        </div>
+        </form>
+    </div>
+    <script src="cal.js"></script>
+</body>
+</html>
